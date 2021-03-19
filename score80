@@ -1,0 +1,7 @@
+score = int(input("점수입력"))
+if score>=90: print("A등급") 
+elif score>=80 and score<90: print("B등급") 
+elif score>=70 and score<80: print("C등급") 
+elif score>=60 and score<70: print("D등급") 
+elif score>=50 and score<60: print("E등급") 
+elif score<50: print("F등급")

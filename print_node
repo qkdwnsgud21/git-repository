@@ -1,0 +1,43 @@
+NODE* Delete(NODE* p_next)
+{
+    NODE* first = p;    //
+    NODE* prev = NULL;
+
+    if (*cnt == 0))
+    {
+        printf(" Nothing to delete! ");
+    }
+    else
+    {
+        char temp[20];
+        printf("insert deleting name:");
+        scanf_s("%s", temp, 20);
+
+        for (int i = 0; i < *cnt; i++)
+        {
+            if (strcmp(p->info.name, temp) != 0)
+            {
+                prev = p;
+                p = p->p_next;
+            }
+            else
+            {
+                delete(p->info.name);
+                delete(p->info.id);
+                delete(p->info.pw);
+                NODE* address = p->p_next;
+                delete(p);
+
+                p = address;
+
+                if (prev == NULL)
+                    first = address;   //
+                else
+                    prev->next = address; //
+                
+                printf(" delete complete\n");
+                *cnt--;
+                break;
+            }
+        }
+    }
